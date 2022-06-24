@@ -7,7 +7,7 @@ Created and Developed by Xanashi
 
 #### PLEASE NOTE that Icaros is, at this point in time, not open source, so this repository is for tracking issues, and downloading the latest releases of Icaros
 
-
+#### [DOWNLOAD HERE](https://github.com/Xanashi/Icaros/releases)
 
 Description
 ===========================
@@ -21,7 +21,7 @@ Besides the FFmpeg supported filetypes, Icaros also contains custom parsers,
 which can produce Cover Art thumbnails for Mkv, Flac, Ape, Mpc and several other filetypes.
 
 Icaros also provides Windows Explorer properties for the following popular filetypes:
-Mkv, Mk3d, Mp4, Mov, Webm, Ogm, Ogg, Flv, Avi,Rm, Rmvb, Flac, Opus, Spx, Ape, Mp3, Mpc, Mka, Tak, Tta, Ofr, Wav and more.
+Mkv, Mk3d, Mp4, Mov, Webm, Ogm, Ogg, Flv, Avi, Rm, Rmvb, Flac, Opus, Spx, Ape, Mp3, Mpc, Mka, Tak, Tta, Ofr, Wav and more.
 
 Properties refer to the info shown for each file in Explorer, such as length, width, height, title, channels and so on.
 
@@ -229,7 +229,7 @@ The Icaros Cache can be utilized and managed in a number of ways. Below is a qui
 
        It is possible to drag 'n drop folders to the LOCATIONS tab directly from Explorer to add them to either list.
 
-    2. Go back to the SETTINGS tab and click the 'BUild Cache' button, to start filling the cache with entries from
+    2. Go back to the SETTINGS tab and click the 'Build Cache' button, to start filling the cache with entries from
        the included locations.
 
     3. Once the indexer has completed, make sure Icaros Thumbnail Provider is ACTIVATED and the Icaros Cache is ENABLED.
@@ -246,7 +246,7 @@ The Icaros Cache can be utilized and managed in a number of ways. Below is a qui
     5. Finally it is possible to delete the internal cache by clicking the 'Clear Cache' button.
       
 
-To avoid having entries disappearing unintentionally from the internal cahe, Icaros does not have any automatic clean up routines of the internal cache. 
+To avoid having entries disappearing unintentionally from the internal cache, Icaros does not have any automatic clean up routines of the internal cache. 
 
 
 
