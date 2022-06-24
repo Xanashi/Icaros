@@ -1,6 +1,9 @@
+Icaros Shell Extensions
+===========================
+
 ![Icaros Icon](https://raw.githubusercontent.com/Xanashi/Icaros/master/IcarosIcon_128.png)
 
-Icaros Shell Extensions - Created by Xanashi
+Created and Developed by Xanashi
 
 #### PLEASE NOTE that Icaros is, at this point in time, not open source, so this repository is for tracking issues, and downloading the latest releases of Icaros
 
