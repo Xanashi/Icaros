@@ -1,8 +1,11 @@
+![Icaros Icon](https://raw.githubusercontent.com/Xanashi/Icaros/master/IcarosIcon_128.png)
+
+Icaros Shell Extensions - Created by Xanashi
+
+
+
 Description
 ===========================
-
-Icaros Shell Extensions - A Shell Extensions Framework By Xanashi
-
 
 Icaros is a collection of lightweight, high quality, Windows Shell Extensions.
 
@@ -13,11 +16,11 @@ Besides the FFmpeg supported filetypes, Icaros also contains custom parsers,
 which can produce Cover Art thumbnails for Mkv, Flac, Ape, Mpc and several other filetypes.
 
 Icaros also provides Windows Explorer properties for the following popular filetypes:
-Mkv, Mk3d, Webm, Ogm, Ogv, Ogg, Flv, Avi, Xvid, Rm, Rmvb, Flac, Opus, Spx, Ape, Mp3, Mpc, Mka, Tak, Tta, Ofr, Ofs, Wav, Wv
+Mkv, Mk3d, Mp4, Mov, Webm, Ogm, Ogg, Flv, Avi,Rm, Rmvb, Flac, Opus, Spx, Ape, Mp3, Mpc, Mka, Tak, Tta, Ofr, Wav and more.
 
 Properties refer to the info shown for each file in Explorer, such as length, width, height, title, channels and so on.
 
-Icaros works on Vista, Windows 7, Windows 8/8.1 and Windows 10.
+Icaros works on Vista, Windows 7, Windows 8/8.1, Windows 10 and Windows 11.
 
 Icaros 3.0.3 and previous versions works partially on Windows XP (SP2+) (Thumbnails only).
 
@@ -98,7 +101,7 @@ IcarosConfig will automatically handle any changes on-the-fly.
 
 
 
-THUMBNAILING OPTIONS
+### THUMBNAILING OPTIONS
 
  - There are now four different ways to add new thumbnail filetypes, as opposed to the previous IcarosConfig which only had one.
 
@@ -161,7 +164,7 @@ THUMBNAILING OPTIONS
 
 
 
-PROPERTY OPTIONS
+### PROPERTY OPTIONS
 
  - You can enable/disable Explorer Properties for specific filetypes via the checkboxes located on the PROPERTIES page. 
    If all checkboxes are disabled, the property handler will not be registered, during activation.
