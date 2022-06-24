@@ -2,6 +2,8 @@
 
 Icaros Shell Extensions - Created by Xanashi
 
+#### PLEASE NOTE that Icaros is, at this point in time, not open source, so this repository is for tracking issues, and downloading the latest releases of Icaros
+
 
 
 Description
@@ -101,7 +103,7 @@ IcarosConfig will automatically handle any changes on-the-fly.
 
 
 
-### THUMBNAILING OPTIONS
+#### THUMBNAILING OPTIONS
 
  - There are now four different ways to add new thumbnail filetypes, as opposed to the previous IcarosConfig which only had one.
 
@@ -164,7 +166,7 @@ IcarosConfig will automatically handle any changes on-the-fly.
 
 
 
-### PROPERTY OPTIONS
+#### PROPERTY OPTIONS
 
  - You can enable/disable Explorer Properties for specific filetypes via the checkboxes located on the PROPERTIES page. 
    If all checkboxes are disabled, the property handler will not be registered, during activation.
