@@ -9,6 +9,8 @@ Created and Developed by Xanashi
 
 #### [DOWNLOAD HERE](https://github.com/Xanashi/Icaros/releases)
 
+<br/>
+
 Description
 ===========================
 
@@ -29,7 +31,7 @@ Icaros works on Vista, Windows 7, Windows 8/8.1, Windows 10 and Windows 11.
 
 Icaros 3.0.3 and previous versions works partially on Windows XP (SP2+) (Thumbnails only).
 
-
+<br/>
 
 
 Requirements
@@ -58,7 +60,7 @@ on your system after installation, you can download and install it with the foll
 
 https://www.microsoft.com/en-us/download/details.aspx?id=17851
 
-
+<br/>
 
 
 Installation/Activation
@@ -89,7 +91,7 @@ Activating Icaros is simple:
 
  To Deactivate/Unregister Icaros, click the name again to change the state once more.
 
-
+<br/>
 
 
 Shell Extension Options
@@ -174,7 +176,7 @@ IcarosConfig will automatically handle any changes on-the-fly.
  - You can enable/disable Explorer Properties for specific filetypes via the checkboxes located on the PROPERTIES page. 
    If all checkboxes are disabled, the property handler will not be registered, during activation.
 
-
+<br/>
 
 
 Icaros Cache
@@ -248,7 +250,7 @@ The Icaros Cache can be utilized and managed in a number of ways. Below is a qui
 
 To avoid having entries disappearing unintentionally from the internal cache, Icaros does not have any automatic clean up routines of the internal cache. 
 
-
+<br/>
 
 
 Manual Registration
@@ -260,45 +262,45 @@ To register/activate Icaros manually, follow these steps:
  1. Open a command prompt, with administrative privileges
 
  2. (Optional) All Icaros Thumbnail Provider and Icaros Property Handler options can be managed via the following registry keys:
-    (Icaros will automatically use the default values, if any of the following values are not set) 
+    (Icaros will automatically use the default values, if any of the following values are not set) <br/><br/>
 
-     Windows Registry Editor Version 5.00
+     <pre>Windows Registry Editor Version 5.00
 
      [HKEY_LOCAL_MACHINE\Software\Icaros]
      "Thumbnail Extensions"=".mkv;.flv;.mov;.ogv"  <-- Filetypes that will be registered by the thumbnail provider
-     "Excluded Properties"=".ogm;.ogv;.ogg"	   <-- (Optional) Excluded property filetypes (default: none are excluded)
-     "Prop Local"="ru"	                           <-- (Optional) If a localization file is present, this value determines what language the
+     "Excluded Properties"=".ogm;.ogv;.ogg"	       <-- (Optional) Excluded property filetypes (default: none are excluded)
+     "Prop Local"="ru"	                       <-- (Optional) If a localization file is present, this value determines what language the
                                                                   Icaros Explorer properties will show up in after registration.
 
      [HKEY_CURRENT_USER\Software\Icaros] 
-     "Cache"=dword:00000001 		           <-- (Optional) Enable Icaros Cache (0: disabled 1: enabled (static) 2: enabled (dynamic))
-     "Offset"=dword:00000023 		           <-- (Optional) Set thumbnail offset in percent in hex
+     "Cache"=dword:00000001 		       <-- (Optional) Enable Icaros Cache (0: disabled 1: enabled (static) 2: enabled (dynamic))
+     "Offset"=dword:00000023 		       <-- (Optional) Set thumbnail offset in percent in hex
      "TimeOffset"=hex(b):10,27,00,00,00,00,00,00   <-- (Optional) Set thumbnail offset in milliseconds in little-endian hex
-     "UseCoverArt"=dword:00000001		   <-- (Optional) Enable Cover Art in mkv (0: disabled 1: use normal cover 2: use landscape cover)
+     "UseCoverArt"=dword:00000001		       <-- (Optional) Enable Cover Art in mkv (0: disabled 1: use normal cover 2: use landscape cover)
      "FrameThresh"=dword:00000008                  <-- (Optional) If this value exists, Icaros will try to detect black and white thumbnails and replace them
                                                                   with a better frame from the file. The value itself determines how aggresive the scan will be.
                                                                   The value can be from 0 to 30. 30 being the most aggresive, changing more frames.
                                                                   It is recommended to leave this value at 8.
-
-     [HKEY_CURRENT_USER\Software\Icaros\Cache] 
+     
+     [HKEY_CURRENT_USER\Software\Icaros\Cache]
      "ExclExts"="jpg;png;gif"                      <-- (Optional) Filetypes that will be ignored by the Icaros Cache
-     "MaxCacheSize"=dword:000001f4		   <-- (Optional) Set the maximum cache size in hex (0 is unlimited)
-     "MinFreeSpace"=dword:00000800		   <-- (Optional) Set the minimum free space in hex (default is 1024MB)
+     "MaxCacheSize"=dword:000001f4		       <-- (Optional) Set the maximum cache size in hex (0 is unlimited)
+     "MinFreeSpace"=dword:00000800		       <-- (Optional) Set the minimum free space in hex (default is 1024MB)</pre><br/>
 
 
 
- 3. Run the following command:        RegSvr32.exe "Path\To\IcarosThumbnailProvider.dll"
-                           or:        RegSvr32.exe "Path\To\IcarosPropertyHandler.dll"
+ 3. Run the following command:        RegSvr32.exe "Path\To\IcarosThumbnailProvider.dll"<br/>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; or:        RegSvr32.exe "Path\To\IcarosPropertyHandler.dll"<br/>
 
- 4. To unregister, run this command:  RegSvr32.exe /u "Path\To\IcarosThumbnailProvider.dll"
-                                 or:  RegSvr32.exe /u "Path\To\IcarosPropertyHandler.dll"
+ 4. To unregister, run this command:  RegSvr32.exe /u "Path\To\IcarosThumbnailProvider.dll"<br/>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;or:  RegSvr32.exe /u "Path\To\IcarosPropertyHandler.dll"<br/>
 
 
-Note: If you're on a 64-bit system, make sure you register the dlls located in the 64-bit directory.
+**Note:** If you're on a 64-bit system, make sure you register the dlls located in the 64-bit directory.
       If you need to enable Icaros in 32-bit dialogs on 64-bit systems, you must also register the dlls
       located in the 32-bit directory.
 
-
+<br/>
 
 
 Additional GUI Features
@@ -309,7 +311,7 @@ On this page, a wide range of options allows you to customize the look, interact
 
 Changing the language here also gives you the option to change the language of the property labels in Windows Explorer.
 
-
+<br/>
 
 
 Donations
@@ -317,11 +319,10 @@ Donations
 
 If you like Icaros and wish to support the free development of the project,
 please consider making a donation to the developer. 
+ 
+[![Paypal link](https://img.shields.io/static/v1?label=Donate&message=Here&color=%232B6870&style=for-the-badge&logo=paypal)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=A4SV4449UB4UQ&lc=GB&item_name=Project%20Icaros&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
 
-Donation link: 
-https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=A4SV4449UB4UQ&lc=GB&item_name=Project%20Icaros&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted
-
-
+<br/>
 
 
 Translations
@@ -330,12 +331,12 @@ Translations
 If Icaros isn't currently translated in your language, and you wish to help out with the translation,
 please check out this simple guide on how to translate Icaros:
 
-http://shark007.net/forum/Thread-How-to-Translate-Icaros?pid=37920#pid37920
+[Guide: How to translate Icaros](https://github.com/Xanashi/Icaros/discussions/29)
 
 Be sure to contact me at Xanashi[at]gmail[dot]com, if you have any questions or have a translation
 file completed, and I'll be sure to include it in the next release of Icaros.
 
-
+<br/>
 
 
 FFmpeg Info
